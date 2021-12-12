@@ -8,10 +8,12 @@ import model.*;
  */
 public class HangmanModelImplTest {
     private HangmanModel h;
+    private HangmanModel hRandom;
 
     @Before
     public void setUp() {
         h = new HangmanModelImpl("hello");
+        hRandom = new HangmanModelImpl();
     }
 
     /**
@@ -142,5 +144,13 @@ public class HangmanModelImplTest {
         assertTrue(h.getRevealedWord().equals("_ _ _ _ _"));
         assertFalse(h.wins());
         assertTrue(h.isGameOver());
+    }
+
+    @Test
+    public void testInitialize() {
+        String originalSecretWord = hRandom.getSecretWord();
+        hRandom.initialize();
+        String newSecretWord = hRandom.getSecretWord();
+        assertFalse(originalSecretWord.equals(newSecretWord));
     }
 }
