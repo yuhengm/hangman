@@ -10,6 +10,9 @@ public class HangmanModelImplTest {
     private HangmanModel h;
     private HangmanModel hRandom;
 
+    /**
+     * Set up models for testing.
+     */
     @Before
     public void setUp() {
         h = new HangmanModelImpl("hello");
