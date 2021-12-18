@@ -1,12 +1,5 @@
 package controller;
 
-import model.HangmanModel;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 /**
  * Interface for the controller of hangman game.
  */

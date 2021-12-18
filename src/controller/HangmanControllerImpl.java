@@ -3,10 +3,6 @@ package controller;
 import model.HangmanModel;
 import view.HangmanView;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-
 /**
  * This class implements HangmanController interface and realizes functions in the interface.
  */
@@ -52,6 +48,7 @@ public class HangmanControllerImpl implements HangmanController {
         view.revealWord(model.getRevealedWord());
         view.drawHangman(model.getNumGuessesLeft(), model.wins());
         if (model.wins() || model.isGameOver()) {
+            view.displayProgress("ANSWER: " + model.getSecretWord());
             view.disablePlayerAction();
         }
     }

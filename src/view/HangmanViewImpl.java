@@ -1,6 +1,6 @@
 package view;
 
-import controller.HangmanController;
+import controller.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

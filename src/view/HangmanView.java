@@ -2,8 +2,6 @@ package view;
 
 import controller.HangmanController;
 
-import javax.swing.*;
-
 /**
  * Interface for the view of hangman game.
  */

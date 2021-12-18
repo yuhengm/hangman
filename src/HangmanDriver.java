@@ -1,8 +1,6 @@
-import controller.HangmanController;
-import controller.HangmanControllerImpl;
-import model.HangmanModel;
-import model.HangmanModelImpl;
-import view.HangmanViewImpl;
+import controller.*;
+import model.*;
+import view.*;
 
 /**
  * Driver class for hangman game.
